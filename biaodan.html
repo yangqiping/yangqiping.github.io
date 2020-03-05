@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend {
+            color: red;
+        }
+        
+        fieldset {
+            width: 200px;
+        }
+        
+        font {
+            color: red;
+        }
+        
+        .grade {
+            width: 160px;
+        }
+        
+        .date {
+            width: 160px;
+        }
+        
+        .sub {
+            width: 160px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>学生档案</legend>
+        姓名：
+        <br>
+        <form>
+            <input type="text" name="name" id="name" required placeholder="请输入姓名">
+            <font>*</font>
+            <br> 学号：
+            <br>
+            <input type="text" name="num" id="num" required placeholder="请输入学号">
+            <font>*</font>
+            <br> 手机号码：
+            <br>
+            <input type="tel" name="tel" id="tel" required placeholder="请输入手机号">
+            <font>*</font>
+            <br> 邮箱地址：
+            <br>
+            <input type="email" name="email" id="email" required placeholder="请输入邮箱地址">
+            <font>*</font>
+            <br> 录取学校：
+            <br>
+            <input type="search" name="sc" list="sc">
+            <datalist id="sc">
+                <option>河北师范大学</option>
+                <option>河北科技大学</option>
+                <option>河北工业大学</option>
+                <option>湖北工业大学</option>
+            </datalist>
+            <br> 入学成绩：
+            <br>
+            <input type="number" name="grade" id="grade" class="grade" min="1" max="750">
+            <br> 入学时间：
+            <br>
+            <input type="date" name="date" id="date" class="date">
+            <br>
+            <br>
+            <input type="submit" class="sub">
+        </form>
+    </fieldset>
+</body>
+
+</html>
